@@ -15,7 +15,7 @@ public class Person {
         this.intToString = intToString;
     }
 
-    public String getAgeAsString() {
+    public String toString() {
         return intToString.intToString(age);
     }
 }
