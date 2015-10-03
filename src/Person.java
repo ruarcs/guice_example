@@ -7,17 +7,15 @@ public class Person {
 
     private final IntToString intToString;
 
+    //Hardcoded to 1.
+    private final int age = 1;
+
     @Inject
     Person(IntToString intToString) {
         this.intToString = intToString;
     }
 
-    public int getAge() {
-        //Hardcode to 1.
-        return 1;
-    }
-
     public String getAgeAsString() {
-        return intToString.intToString(getAge());
+        return intToString.intToString(age);
     }
 }
