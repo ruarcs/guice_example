@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Injector injector = Guice.createInjector();
+        Injector injector = Guice.createInjector(new PersonModule());
         Person p = injector.getInstance(Person.class);
         System.out.println(String.format("I created a %s with age %s!!!", p.getClass().getSimpleName(), p.toString()));
 
